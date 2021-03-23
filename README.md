@@ -20,4 +20,4 @@ The testing results will in current directory(test/VOT2016/model_name/)
 ### Train refine model
 1. choose the best test base model as the training model
 2. modify training set path in /experiment/DASnet_sharp/config.json
-3. python ./tools/train_dasnet_sharp.py --config /experiment/DASnet/config.json
+3. python ./tools/train_dasnet_sharp.py --config /experiment/DASnet/config.json --pretrain ./snapshot/best_model.pth
