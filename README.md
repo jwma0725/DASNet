@@ -1,4 +1,4 @@
-# DASnet
+# DASNet
 
 ## Environment Setup
 This code has been tested on Ubuntu18.04, Python3.6, Pytorch0.4.1, CUDA10.1, RTX 2080Ti GPUs
