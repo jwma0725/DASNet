@@ -9,14 +9,15 @@ This code has been tested on Ubuntu18.04, Python3.6, Pytorch0.4.1, CUDA10.1, RTX
   bash make.sh  
 
 ## Test tracker
-1. Before testing again, you need to create a directory /data and put the downloaded data in it.  
+1. Before testing again, you need to create a directory /data and put the downloaded test data in it.  
 2. python -u ./tools/test.py --snapshot model.pth --dataset VOT2016 --config config16.json  
 The testing results will in current directory(test/VOT2016/model_name/)
 
 ## Train tracker
 ### Train base model
 1. modify training set path in /experiment/DASnet/config.json
-2. python -u ./tools/train_dasnet.py --config /experiment/DASnet/config.json
+2. python -u ./tools/train_dasnet.py --config /experiment/DASnet/config.json  
+
 ### Train refine model
 1. choose the best test base model as the training model
 2. modify training set path in /experiment/DASnet_sharp/config.json
